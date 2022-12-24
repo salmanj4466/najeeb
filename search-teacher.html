@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Favicon -->
+      <link rel="icon" href="assets/images/favicon.png" type="image/ico" sizes="16x16" />
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <!-- Stylesheet -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+      <!-- Owl Carousal -->
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+      <!-- Range Slider -->
+      <link rel="stylesheet" href="assets/css/nouislider.css" />
+      <!-- Select dropdown -->
+      <link href="assets/css/select2.min.css" rel="stylesheet" />
+      <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+      <link type="text/css" rel="stylesheet" href="assets/css/poppins-fonts.css">
+      <title>Najeeb</title>
+   </head>
+   <body>
+      <!-- Header -->
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+               <a class="navbar-brand py-0" href="index.html">
+               <img src="assets/images/logo.png" alt="logo" />
+               </a>
+               <div class="order-lg-2">
+                  <a class="btn btn-light mr-2" href="javascript:void(0)">Login</a>
+                  <a class="btn btn-primary" href="javascript:void(0)">Sign Up</a>
+                  <a href="home-arabic.html" class="d-none d-lg-inline-block ml-4 pl-2 mb-2 text-primary font-tajweed">عربي
+                  </a>
+               </div>
+               <button class="navbar-toggler pr-0" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+               <img src="assets/images/icons/menu.png" alt="menu" />
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto center-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Contact</a>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="javascript:void(0)">Teachers</a>
+                     </li>
+                     <li class="nav-item d-lg-none">
+                        <a class="nav-link font-tajweed" href="home-arabic.html">عربي </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- main -->
+      <main>
+         <section class="search-teacher">
+            <div class="container">
+               <div class="row align-items-center filter-status mb-2">
+                  <div class="col-2 col-sm-4 col-md-3 col-lg-3">
+                     <h6 class="d-none d-md-block">Filters</h6>
+                     <a href="#" data-toggle="modal" data-target="#filter"> <span class="filter-icon d-md-none"><img src="assets/images/filter.png" alt="filter"></span></a>
+                  </div>
+                  <div class="col-10 col-sm-8 col-md-5 col-lg-6">
+                     <form class="form-inline">
+                        <div class="mb-2">
+                           <h6>Teacher</h6>
+                        </div>
+                        <div class="form-group ml-3 mb-2">
+                           <input type="text" class="form-control" placeholder="Search for teacher">
+                           <img class="search-icon" src="assets/images/icons/search.png" alt="search">
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3">
+                     <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="pills-online-tab" data-toggle="pill" data-target="#pills-online" type="button" role="tab" aria-controls="pills-online" aria-selected="true">Online Now</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link active" id="pills-later-tab" data-toggle="pill" data-target="#pills-later" type="button" role="tab" aria-controls="pills-later" aria-selected="false">Online Later</button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 col-lg-3 pr-md-0">
+                     <div class="filter-modal d-none d-md-block" id="filter" tabindex="-1" aria-labelledby="filterLabel" aria-hidden="true">
+                        <div class="modal-dialog mt-4 mt-md-0">
+                           <div class="modal-content border-0">
+                              <div class="modal-body p-0 border-0">
+                                 <div class="card filter-block pb-4">
+                                    <div class="card-body">
+                                       <form>
+                                          <label>Teacher</label>
+                                          <div class="form-row">
+                                             <div class="col">
+                                                <div class="form-group">
+                                                   <div class="up-in-toggle mb-md-2">
+                                                      <input type="radio" id="Male" name="gender" value="Male">
+                                                      <label for="Male"><img class="mr-1" src="assets/images/male.png" alt="male"> Male</label>
+                                                      <input type="radio" id="Female" name="gender" value="Female">
+                                                      <label for="Female"><img class="mr-1" src="assets/images/female.png" alt="female"> Female</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form-group">
+                                             <label>Curriculum In</label>
+                                             <select class="form-control js-example-basic-single" name="curriculum">
+                                                <option>Select</option>
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group">
+                                             <label>Type of education</label>
+                                             <select class="form-control js-example-basic-single" name="education">
+                                                <option>Select</option>
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group">
+                                             <label>Grades</label>
+                                             <select class="form-control js-example-basic-single" name="grades">
+                                                <option>Select</option>
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group">
+                                             <label>Subjects</label>
+                                             <select class="form-control js-example-basic-single" name="subjects">
+                                                <option>Select</option>
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>
+                                             </select>
+                                          </div>
+                                          <p class="text-center mt-3">
+                                             <a type="button" class="adv-search" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                             <u>Advenced Search</u> <i class="fa fa-angle-down"></i>
+                                             </a>
+                                          </p>
+                                          <div class="collapse" id="collapseExample">
+                                             <label class="text-dark">Year of experience</label>
+                                             <div class="filter mb-3">
+                                                <label class="filter__label">
+                                                <input type="text" class="filter__input">
+                                                </label>  
+                                                <div id="sliderPrice" class="filter__slider-price" data-min="0" data-max="50" data-step="5"></div>
+                                                <label class="filter__label">
+                                                <input type="text" class="filter__input">
+                                                </label>                                      
+                                             </div>
+                                             <label class="text-dark">With stars rating</label>
+                                             <div class="filter">
+                                                <label class="filter__label">
+                                                <input type="text" class="filter__input filter-value">
+                                                </label>  
+                                                <div id="sliderPrice2" class="filter__slider-price" data-min="0" data-max="10" data-step="5"></div>
+                                                <label class="filter__label">
+                                                <input type="text" class="filter__input filter-value">
+                                                </label>                                      
+                                             </div>
+                                             <label>I’m</label>
+                                             <div class="form-row">
+                                                <div class="col">
+                                                   <div class="form-group">
+                                                      <div class="up-in-toggle mb-md-2">
+                                                         <input type="radio" id="Male2" name="gender2" value="Male2">
+                                                         <label for="Male2"><img class="mr-1" src="assets/images/male.png" alt="male"> Male</label>
+                                                         <input type="radio" id="Female2" name="gender2" value="Female2">
+                                                         <label for="Female2"><img class="mr-1" src="assets/images/female.png" alt="female"> Female</label>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="form-group">
+                                                <label class="text-dark">Teacher ID</label>
+                                                <input type="text" class="form-control" placeholder="Enter Teacher ID">
+                                             </div>
+                                             <div class="form-group text-center mt-4">
+                                                <button type="submit" class="btn btn-primary">Search</button>
+                                             </div>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-lg-9">
+                     <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-online" role="tabpanel" aria-labelledby="pills-online-tab">
+                           <div class="card teacher-rating">
+                              <div class="card-body">
+                                 <div class="rating-block border-0 py-0">
+                                    <div class="media align-items-center">
+                                       <img class="mr-3" src="assets/images/teacher.png" alt="teacher">
+                                       <div class="media-body d-md-flex justify-content-between align-items-md-center">
+                                          <div class="st-info mb-3 mb-md-0">
+                                             <h5 class="mt-0">Noor Mohamed</h5>
+                                             <p>
+                                                <span class="rating-star mr-2">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star text-gray"></i>
+                                                </span>
+                                                <span>(4.3k)</span>
+                                             </p>
+                                          </div>
+                                          <a href="javascript:void(0)" class="btn-online d-none d-md-flex ml-0"><span class="dot"></span> Online Now</a>              
+                                       </div>
+                                    </div>
+
+                                      <a href="javascript:void(0)" class="btn-online d-sm-none mt-2 ml-0"><span class="dot"></span> Online Now</a>
+
+                                    <p class="mt-2 mb-md-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua</p>
+                                    <div class="row mt-3">
+                                       <div class="col-md-6 mb-2 mb-md-3">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/document.png" alt="file"> Curriculum In:</p>
+                                          <i class="fa fa-angle-left d-sm-none"></i> 
+                                          <span class="badge badge-info">Saudi Arabia</span>
+                                          <i class="fa fa-angle-right d-sm-none"></i>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-3">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/school.png" alt="school"> Type Of Educations:</p>
+                                          <i class="fa fa-angle-left d-sm-none"></i>
+                                          <span class="badge badge-info">Quran &amp; Tajwid</span>
+                                          <i class="fa fa-angle-right d-sm-none"></i>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-3">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/grade.png" alt="grade"> Grades: </p>
+                                          <i class="fa fa-angle-left d-sm-none"></i>
+                                          <span class="badge badge-info">Lower Grade</span>
+                                          <i class="fa fa-angle-right d-sm-none"></i>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-3">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/book.png" alt="book"> Subject:</p>
+                                          <i class="fa fa-angle-left d-sm-none"></i>
+                                          <span class="badge badge-info">Quran</span>
+                                          <i class="fa fa-angle-right d-sm-none"></i>
+                                       </div>
+                                    </div>
+                                    <div class="mt-2 mt-md-0">
+                                       <a href="javascript:void(0)" class="btn btn-primary px-2 px-md-4 mr-2 mr-md-3">Start Now</a>
+                                       <h4 class="d-inline-block mt-4"><strong class="text-info mr-1 mr-md-2">0.16 SAR</strong> <small class="d-none d-md-inline-block"> (Male Students Only) </small> </h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="pills-later" role="tabpanel" aria-labelledby="pills-later-tab">
+                           <div class="card teacher-rating">
+                              <div class="card-body">
+                                 <div class="rating-block border-0 py-0">
+                                    <div class="media align-items-center">
+                                       <div class="position-relative">
+                                       <img class="mr-3" src="assets/images/teacher.png" alt="teacher">
+                                        <span class="online-dot d-sm-none"></span>
+                                     </div>
+                                       <div class="media-body d-md-flex justify-content-between align-items-md-center">
+                                          <div class="st-info mb-3 mb-md-0">
+                                             <h5 class="mt-0">Noor Mohamed</h5>
+                                             <p>
+                                                <span class="rating-star mr-2">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star text-gray"></i>
+                                                </span>
+                                                <span>(4.3k)</span>
+                                             </p>
+                                          </div>
+                                          <a href="javascript:void(0)" class="btn-online d-none d-sm-flex ml-0"><span class="dot"></span> Online Now</a>              
+                                       </div>
+                                    </div>
+
+                                      <a href="javascript:void(0)" class="btn-online d-sm-none mt-2 ml-0"><span class="dot"></span> Online Now</a>
+
+                                    <p class="mt-2 mb-md-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua  <span id="text"> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </span> <a id="read_more" href="javascript:void(0)">Read more...</a></p>
+                                    <div class="row mt-3">
+                                       <div class="col-md-6 mb-2 mb-md-4">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/document.png" alt="file"> Curriculum In:</p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-4">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/school.png" alt="school"> Type Of Educations:</p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-4">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/grade.png" alt="grade"> Grades: </p>
+                                          <i class="fa fa-angle-left d-sm-none"></i>
+                                          <span class="badge badge-info">Lower Grade</span>
+                                          <i class="fa fa-angle-right d-sm-none"></i>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-4">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/book.png" alt="book"> Subject:</p>
+                                          <i class="fa fa-angle-left d-sm-none"></i>
+                                          <span class="badge badge-info">Quran</span>
+                                          <i class="fa fa-angle-right d-sm-none"></i>
+                                       </div>
+                                    </div>
+                                    <div class="mt-2 mt-md-0">
+                                       <a href="javascript:void(0)" class="btn btn-primary px-2 px-md-4 mr-2 mr-md-3">Start Now</a>
+                                       <h4 class="d-inline-block mt-4"><strong class="text-info mr-1 mr-md-2">0.16 SAR</strong> <small class="d-none d-md-inline-block"> (Male Students Only) </small> </h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card teacher-rating">
+                              <div class="card-body">
+                                 <div class="rating-block border-0 py-0">
+                                    <div class="media align-items-center">
+                                       <img class="mr-3" src="assets/images/teacher-2.png" alt="teacher">
+                                       <div class="media-body d-md-flex justify-content-between align-items-md-center">
+                                          <div class="st-info mb-3 mb-md-0">
+                                             <h5 class="mt-0">Ahmed AlMohamed</h5>
+                                             <p>
+                                                <span class="rating-star mr-2">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star text-gray"></i>
+                                                </span>
+                                                <span>(4.3k)</span>
+                                             </p>
+                                          </div>
+                                          <div class="d-none d-sm-inline-flex">
+                                             <a href="javascript:void(0)" class="bell-icon"><img class="m-auto" src="assets/images/bell-info.png" alt="#00C8C9"></a>
+                                             <a href="javascript:void(0)" class="btn-online btn-busy ml-0"><span class="dot"></span> Currently studying </a>              
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                        <div class="d-sm-none">
+                                             <a href="javascript:void(0)" class="bell-icon mt-2"><img class="m-auto" src="assets/images/bell-info.png" alt="#00C8C9"></a>
+                                             <a href="javascript:void(0)" class="btn-online btn-busy ml-0"><span class="dot"></span> Currently studying </a>              
+                                          </div>
+
+                                    <p class="mt-2 mb-md-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua </p>
+                                    <div class="row mt-3">
+                                       <div class="col-md-6 mb-2 mb-md-4">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/document.png" alt="file"> Curriculum In:</p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-4">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/school.png" alt="school"> Type Of Educations:</p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Curriculum</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Curriculum</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-4">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/grade.png" alt="grade"> Grades: </p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-4">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/book.png" alt="book"> Subject:</p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="mt-2 mt-md-0">
+                                       <a href="javascript:void(0)" class="btn btn-outline-warning px-2 px-md-4 mr-2 mr-md-3">
+                                       <img class="bell-warning mr-2" src="assets/images/bell-warning.png" alt="bell-warning">
+                                       <img class="bell-white mr-2" src="assets/images/bell-white.png" alt="bell-white">  Notify me when available</a>
+                                       <h4 class="d-inline-block mt-4"><strong class="text-warning mr-1 mr-md-2">0.44 SAR</strong> <small class="d-none d-md-inline-block"> (Male Students Only) </small> </h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card teacher-rating">
+                              <div class="card-body">
+                                 <div class="rating-block border-0 py-0">
+                                    <div class="media align-items-center">
+                                          <img class="profile-img" src="assets/images/teacher-2.png" alt="teacher">
+                                         
+                                       <div class="media-body d-md-flex justify-content-between align-items-md-center">
+                                          <div class="st-info mb-3 mb-md-0">
+                                             <h5 class="mt-0">Ahmed AlMohamed</h5>
+                                             <p>
+                                                <span class="rating-star mr-2">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star text-gray"></i>
+                                                </span>
+                                                <span>(4.3k)</span>
+                                             </p>
+                                          </div>
+                                          <div class="d-none d-sm-inline-flex">
+                                             <a href="javascript:void(0)" class="bell-icon"><img class="m-auto" src="assets/images/bell-info.png" alt="#00C8C9"></a>
+                                             <a href="javascript:void(0)" class="btn-online btn-busy ml-0"><span class="dot"></span> Currently studying </a>              
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                      <div class="d-sm-none">
+                                             <a href="javascript:void(0)" class="bell-icon"><img class="m-auto" src="assets/images/bell-info.png" alt="#00C8C9"></a>
+                                             <a href="javascript:void(0)" class="btn-online btn-busy ml-0"><span class="dot"></span> Currently studying </a>              
+                                          </div>
+
+                                    <p class="mt-2 mb-md-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua</p>
+                                    <div class="row mt-3">
+                                       <div class="col-md-6 mb-2 mb-md-3">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/document.png" alt="file"> Curriculum In:</p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-3">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/school.png" alt="school"> Type Of Educations:</p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-3">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/grade.png" alt="grade"> Grades: </p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6 mb-2 mb-md-3">
+                                          <p class="mb-1"><img class="mr-2" src="assets/images/icons/book.png" alt="book"> Subject:</p>
+                                          <div id="owl-carousel" class="owl-carousel">
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Saudi Arabia</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Lebanon</span>
+                                             </div>
+                                             <div class="item">
+                                                <span class="badge badge-info">Kuwait</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="mt-2 mt-md-0">
+                                       <a href="javascript:void(0)" class="btn btn-outline-warning px-2 px-md-4 mr-2 mr-md-3">
+                                       <img class="bell-warning mr-2" src="assets/images/bell-warning.png" alt="bell-warning">
+                                       <img class="bell-white mr-2" src="assets/images/bell-white.png" alt="bell-white">  Notify me when available</a>
+                                       <h4 class="d-inline-block mt-4"><strong class="text-warning mr-1 mr-md-2">0.44 SAR</strong> <small class="d-none d-md-inline-block"> (Female Students Only) </small> </h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12 text-center">
+                           <a href="javascript:void(0)" class="btn btn-outline-primary mt-2">Show more</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- footer  -->
+      <footer>
+         <div class="container">
+            <div class="row justify-content-between">
+               <div class="col-12 col-md-4 col-xl-3 text-center text-md-left pr-xl-0">
+                  <h5 class="d-none d-md-block"></h5>
+                  <img class="tick" src="assets/images/features.png" alt="" />
+                  <p>
+                     Najeeb platform is an educational platform specialized in
+                     providing private tutors to students for the stages of general
+                     education from the first primary to the third secondary, and for
+                     all academic subjects. It also provides teaching the Noble Qur’an
+                     and Tajweed for all ages.
+                  </p>
+               </div>
+               <div class="col-8 col-md-4 col-xl-3">
+                  <h5 class="rounded-pill d-none d-md-block">Important links</h5>
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png" />
+                        Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png" />
+                        Teachers</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png" />
+                        Contact Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png" />
+                        Join us as a teacher</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png" />
+                        Login</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-4 col-md-4 col-xl-3">
+                  <div class="d-none d-md-block">
+                     <h5 class="text-right">Contact Us</h5>
+                     <a class="nav-link" href="mailto:info@najeeb.sa"><img class="mr-2"
+                        src="assets/images/icons/footer/mail.png" />
+                     info@najeeb.sa</a>
+                  </div>
+                  <div class="follow">
+                     <p class="mb-2">Follow us</p>
+                     <ul class="d-flex">
+                        <li>
+                           <a href="javascript:void(0)"><img src="assets/images/icons/footer/twitter.png"
+                              alt="twitter" /></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)"><img src="assets/images/icons/footer/fb.png" alt="fb" /></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)"><img src="assets/images/icons/footer/yt.png" alt="yt" /></a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)"><img src="assets/images/icons/footer/insta.png" alt="insta" /></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-10 pl-0">
+                  <div class="d-md-none text-right mt-4">
+                     <h5>Contact Us</h5>
+                     <a class="nav-link" href="mailto:info@najeeb.sa"><img class="mr-2"
+                        src="assets/images/icons/footer/mail.png" />info@najeeb.sa</a>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <p class="text-center copy-right pt-4">
+                     © All Rights Reserved najeeb.sa
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- JavaScript -->
+      <script src="assets/js/jquery-3.5.1.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/owl.carousel.js"></script>
+      <!-- Select Dropdown -->
+      <script src="assets/js/select2.min.js"></script>
+      <!-- Range Slider -->
+      <script src="assets/js/nouislider.js"></script>
+      <script>
+         $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+               $(".navbar").addClass("navbar-dark");
+            } else {
+               $(".navbar").removeClass("navbar-dark");
+            }
+         });
+         
+         
+         $(document).ready(function(){
+           $(".filter-icon").click(function(){
+             $(".filter-modal").addClass("modal fade");
+           });
+         
+            $(".modal-backdrop").click(function(){
+             $(".filter-modal").removeClass("modal fade");
+           });
+         });
+         
+          $(document).ready(function() {
+             $('.js-example-basic-single').select2();
+         });
+         
+          $( '.owl-carousel' ).owlCarousel({
+                items: 3,
+                margin: 5,
+                nav: true,
+                dots: false,
+                mouseDrag: true,
+                 autoWidth:true,
+                responsiveClass: true,
+                 navText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+                responsive: {
+                    0:{
+                      items: 1
+                    },
+                    480:{
+                      items: 3
+                    },
+                    769:{
+                      items: 3
+                    }
+                }
+            });
+         
+         
+      </script>
+      <script>
+         const slider = document.getElementById('sliderPrice');
+         const rangeMin = parseInt(slider.dataset.min);
+         const rangeMax = parseInt(slider.dataset.max);
+         const step = parseInt(slider.dataset.step);
+         const filterInputs = document.querySelectorAll('input.filter__input');
+         
+         noUiSlider.create(slider, {
+         start: [rangeMin, rangeMax],
+         connect: true,
+         step: step,
+         range: {
+         'min': rangeMin,
+         'max': rangeMax
+         },
+         
+         // make numbers whole
+         format: {
+         to: value => value,
+         from: value => value
+         }
+         });
+         
+         // bind inputs with noUiSlider 
+         slider.noUiSlider.on('update', (values, handle) => { 
+         filterInputs[handle].value = values[handle]; 
+         });
+         
+         filterInputs.forEach((input, indexInput) => { 
+         input.addEventListener('change', () => {
+         slider.noUiSlider.setHandle(indexInput, input.value);
+         })
+         });
+      </script>
+      <script>
+         const slider2 = document.getElementById('sliderPrice2');
+         const rangeMin2 = parseInt(slider2.dataset.min);
+         const rangeMax2 = parseInt(slider2.dataset.max);
+         const step2 = parseInt(slider2.dataset.step2);
+         const filterInput2 = document.querySelectorAll('input.filter-value');
+         
+         noUiSlider.create(slider2, {
+         start: [rangeMin2, rangeMax2],
+         connect: true,
+         step: step,
+         range: {
+         'min': rangeMin2,
+         'max': rangeMax2
+         },
+         
+         // make numbers whole
+         format: {
+         to: value => value,
+         from: value => value
+         }
+         });
+         
+         // bind inputs with noUiSlider 
+         slider2.noUiSlider.on('update', (values, handle) => { 
+         filterInput2[handle].value = values[handle]; 
+         });
+         
+         filterInput2.forEach((input, indexInput) => { 
+         input.addEventListener('change', () => {
+         slider2.noUiSlider.setHandle(indexInput, input.value);
+         })
+         });
+      </script>
+      <script>
+         $(document).ready(function() {
+            $("#read_more").click(function() {
+              var elem = $("#read_more").text();
+              if (elem == "Read less") {
+                //Stuff to do when btn is in the read more state
+                $("#read_more").text("Read more...");
+                $("#text").hide();
+              } else {   
+                //Stuff to do when btn is in the read less state
+                $("#read_more").text("Read less");
+                $("#text").show();
+              }
+            });
+          });
+          
+      </script>
+   </body>
+</html>

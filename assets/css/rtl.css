@@ -1,0 +1,309 @@
+body {
+    text-align: right;
+    direction: rtl;
+    font-family: Tajawal-Regular !important;
+
+}
+
+.btn {
+    font-family: Tajawal-Bold !important;
+}
+
+.user-account h1 {
+    font-size: 32px;
+}
+
+header .navbar-brand img {
+    margin-left: 60px;
+    margin-right: 0;
+}
+
+header nav ul li a {
+    font-family: Tajawal-Regular;
+}
+
+header .nav-item.active a {
+    font-family: Tajawal-Bold;
+    font-weight: 700 !important;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.hero .row2 {
+
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 81px;
+    border-bottom-left-radius: 209.5px;
+}
+
+.hero .btn-dark {
+    min-width: 110px;
+}
+
+.hero .class {
+    border-radius: 8px 0 0 8px !important;
+}
+
+.hero .vector {
+    position: absolute;
+    bottom: 0px;
+    left: 0px
+}
+
+.hero .subject {
+    border-radius: 0 8px 8px 0 !important;
+}
+
+.dropdown-select {
+    padding-left: 30px;
+    padding-right: 18px;
+}
+
+.dropdown-select,
+.dropdown-select .option {
+    text-align: right !important;
+}
+
+.dropdown-select:after {
+    left: 10px;
+    right: unset;
+}
+
+.card-section .private {
+    left: 36px;
+}
+
+.features .media-body {
+    line-height: 19px;
+}
+
+footer h5 {
+    border-radius: 20px 0 0 20px;
+}
+
+footer h5.mail {
+    border-radius: 0 20px 20px 0;
+}
+
+footer .nav-link {
+    padding-right: 0px;
+}
+
+footer .nav-link img {
+    margin-left: 8px;
+}
+
+.follow ul {
+    align-items: flex-start;
+}
+
+
+.contact-section,
+.user-account,
+.user-account .btn-primary,
+.btn-primary,
+.btn-light,
+.btn-dark {
+    font-family: Tajawal-Regular;
+}
+
+
+label {
+    font-weight: 600;
+    font-family: Tajawal-Regular !important;
+
+}
+
+
+.form-control,
+.hero .select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-family: Tajawal-Regular !important;
+
+}
+
+
+.teacher-profile {
+    font-family: 'Tajawal-Regular' !important;
+}
+
+.rating-block p,
+.rating-block h5,
+.student-rating p,
+.teacher-profile .btn-primary,
+.teacher-info ul li p,
+.teacher-info ul li .badge-info,
+.btn-online,
+.teacher-profile .btn-outline-primary,
+.up-in-toggle label,
+.no-teacher-available .choose-teacher .btn,
+.badge-info,
+.filter-modal .btn,
+.teacher-rating .btn,
+.wallet-report h6,
+.table {
+    font-family: 'Tajawal-Regular' !important;
+}
+
+.student-rating {
+    padding: 20px 0 30px 20px;
+}
+
+
+.rating-block .media img {
+    margin-left: 12px;
+    margin-right: 0;
+
+}
+
+.teacher-info {
+    border-left: 1px solid #E8E8E8;
+}
+
+.teacher-info .media img {
+    margin-left: 15px;
+}
+
+.btn-online {
+    margin-right: 15px;
+
+}
+
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+    left: unset;
+    right: unset;
+}
+
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+    right: -12px;
+    left: auto;
+}
+
+.filter__slider-price {
+    width: 100%;
+    margin: 0 15px 0 8px;
+}
+
+
+.pass-icon {
+    right: unset;
+    left: 12px;
+}
+
+.form-check {
+    padding-right: 1.25rem;
+}
+
+.form-check-input {
+    margin-right: -1.25rem;
+}
+
+
+.up-in-toggle label {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.up-in-toggle label:last-of-type {
+    margin-left: 0;
+}
+
+.subject .select2-selection--single {
+    border-radius: 0 8px 8px 0 !important;
+}
+
+.class .select2-selection--single {
+    border-radius: 8px 0 0 8px !important;
+}
+
+.change-password .change-password-form h3 {
+    font-weight: 700;
+}
+
+.add-wallet .btn-primary {
+    right: unset;
+    left: 10px;
+}
+
+.add-wallet .form-control {
+    height: 64px;
+    padding: 6px 30px 6px 220px;
+}
+
+.student-profile .add-wallet .form-control {
+    padding: 6px 15px 6px 130px !important;
+}
+
+.table tbody tr td:first-child, .table thead tr th:first-child {
+    text-align: right;
+}
+
+.teacher-pre-class .btn {
+    justify-content: center;
+}
+
+.table tbody tr td:first-child {
+    border-right: 1px solid #e4e7ec !important;
+    border-radius: 0 8px 8px 0;
+    border-left: none !important;
+}
+
+.table tbody tr td:last-child {
+    border-left: 1px solid #e4e7ec !important;
+    border-radius: 8px 0 0 8px;
+    border-right: none !important;
+}
+
+
+.table tbody tr td:first-child::after {
+  background-color: unset;
+}
+
+
+/* Media Query */
+
+@media (max-width: 576px) {
+    header .navbar-brand img {
+        margin-left: 0px;
+        margin-right: 0;
+    }
+
+    .hero .row1 {
+        min-height: 550px;
+    }
+
+    .follow {
+        padding-top: 0px;
+        text-align: left;
+    }
+
+    .follow ul {
+        align-items: end;
+    }
+
+    header .btn {
+        font-size: 11px;
+    }
+
+    .teacher-info ul li {
+        padding: 6px 15px 6px 0;
+    }
+
+    .teacher-info ul li .fa-angle-right {
+        float: right;
+        font-size: 18px;
+        margin-right: -20px;
+        padding-top: 5px;
+    }
+
+    .student-rating {
+        padding: 10px 0;
+    }
+
+    .add-wallet .form-control {
+        padding: 6px 30px;
+    }
+
+}

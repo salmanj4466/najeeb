@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Favicon -->
+      <link rel="icon" href="assets/images/favicon.png" type="image/ico" sizes="16x16" />
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <!-- Stylesheet -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!-- Owl Carousal -->
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+      <!-- Select dropdown -->
+      <link href="assets/css/select2.min.css" rel="stylesheet" />
+      <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+      <link type="text/css" rel="stylesheet" href="assets/css/poppins-fonts.css">
+      <title>Najeeb</title>
+   </head>
+   <body>
+      <!-- Header -->
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light user-login">
+            <div class="container">
+               <a class="navbar-brand py-0" href="index.html">
+               <img src="assets/images/logo.png" alt="logo">
+               </a>
+               <div class="d-flex order-lg-2">
+                  <div class="dropdown d-lg-inline-block">
+                     <button class="btn btn-light" type="button" data-toggle="dropdown" aria-expanded="false">
+                     <img class="mr-md-2" src="assets/images/user.png" alt="user"> <span class="d-none d-md-block">Abdullah Saleh <i class="fa fa-angle-down ml-3"></i></span>
+                     </button>
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Setting</a>
+                        <a class="dropdown-item" href="javascript:void(0)">Logout</a>
+                     </div>
+                  </div>
+                  <a class="btn btn-light ml-2" href="javascript:void(0)"> <strong class="ml-2">500  Rs </strong> <img class="ml-2 ml-md-4" src="assets/images/wallet.png" alt="wallet"></a>
+
+                    <a class="btn btn-primary px-2 ml-2 d-lg-none" href="javascript:void(0)">Old lessons</a>
+
+                  <a href="home-arabic.html" class="d-none d-lg-inline-block ml-4 pl-2 mb-2 text-primary font-tajweed">عربي </a>
+               </div>
+               <button class="navbar-toggler pr-0" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+               <img src="assets/images/icons/menu.png" alt="menu">
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto center-nav">
+                     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Contact</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">Teachers</a></li>
+                     <li class="nav-item d-lg-none font-tajweed"><a class="nav-link font-tajweed" href="home-arabic.html">عربي </a></li>
+                  </ul>
+                  <div class="mr-auto d-none d-lg-block">
+                     <a class="btn btn-primary" href="javascript:void(0)">Old lessons</a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- main -->
+      <main>
+         <!-- Hero -->
+         <section class="hero pb-3">
+            <div class="container-fluid">
+               <div class="row row1">
+                  <div class="col-12 col-lg-11">
+                     <div class="row row2 align-items-center">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-12 col-md-3 order-1 order-md-0 text-center">
+                                 <img src="assets/images/hero.png" alt="hero">
+                              </div>
+                              <div class="col-12 col-md-9 order-0 order-md-1">
+                                 <h1 class="mb-4">Get started with your teacher</h1>
+                                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                       <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Holy Quran</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                       <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Saudi Curricula</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                       <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">International Curricula</button>
+                                    </li>
+                                 </ul>
+                                 <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                       <form>
+                                          <div class="row mt-3">
+                                             <div class="col-sm-7 col-md-6">
+                                                <div class="row">
+                                                   <div class="col-6 subject pr-0">
+                                                      <div class="form-group">
+                                                         <select class="form-control js-example-basic-single" name="subject">
+                                                            <option>Choose the subject</option>
+                                                            <option value="arabic">Arabic</option>
+                                                            <option value="english">English</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-6 class pl-0">
+                                                      <div class="form-group">
+                                                         <select class="form-control js-example-basic-single" name="class">
+                                                            <option>Choose class</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                            <option value="4">Four</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-5 col-md-6 pl-sm-0">
+                                                <button type="submit" class="btn btn-light search">Search Now</button>
+                                             </div>
+                                          </div>
+                                       </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                       <form>
+                                          <div class="row mt-3">
+                                             <div class="col-sm-7 col-md-6">
+                                                <div class="row">
+                                                   <div class="col-6 pr-0">
+                                                      <div class="form-group">
+                                                         <select class="form-control subject js-example-basic-single" name="subject">
+                                                            <option>Choose the subject</option>
+                                                            <option value="arabic">Arabic</option>
+                                                            <option value="english">English</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-6 pl-0">
+                                                      <div class="form-group">
+                                                         <select class="form-control subject js-example-basic-single" name="class">
+                                                            <option>Choose class</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                            <option value="4">Four</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-5 col-md-6 pl-sm-0">
+                                                <button type="submit" class="btn btn-light search">Search Now</button>
+                                             </div>
+                                          </div>
+                                       </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                       <form>
+                                          <div class="row mt-3">
+                                             <div class="col-sm-7 col-md-6">
+                                                <div class="row">
+                                                   <div class="col-6 pr-0">
+                                                      <div class="form-group">
+                                                         <select class="form-control subject js-example-basic-single" name="subject">
+                                                            <option>Choose the subject</option>
+                                                            <option value="arabic">Arabic</option>
+                                                            <option value="english">English</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-6 pl-0">
+                                                      <div class="form-group">
+                                                         <select class="form-control subject js-example-basic-single" name="class">
+                                                            <option>Choose class</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                            <option value="4">Four</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-5 col-md-6 pl-sm-0">
+                                                <button type="submit" class="btn btn-light search">Search Now</button>
+                                             </div>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-10 d-none d-lg-block text-right">
+                                       <img class="pt-4" src="assets/images/icons/hero-vector.png" alt="">
+                                    </div>
+                                    <div class="col-12 d-block d-sm-none">
+                                       <img class="najeeb" src="assets/images/hero-bg-r.png" alt="najeeb">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Subscribe -->
+         <section class="subscribe">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-12 col-md-4 col-lg-4">
+                     <img class="img-fluid" src="assets/images/client-help.png" alt="client">
+                  </div>
+                  <div class="col-12 col-md-8 col-lg-7 offset-lg-1">
+                     <img class="mb-2 mt-4 mt-md-0" src="assets/images/subscribe-pic.png" alt="info">
+                     <p>Najeeb platform is a Saudi educational platform specialized in providing private tutors to students
+                        for the stages of general education from the first primary to the third secondary, and for all
+                        academic subjects. It also provides teaching the Holy Quran and Tajweed for all ages.
+                     </p>
+                     <div>
+                        <a class="btn btn-primary mr-sm-2" href="javascript:void(0)">Subscribe</a>
+                        <a class="btn btn-light" href="javascript:void(0)">Choose your teacher</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- subscribe-2 -->
+         <section class="subscribe subscribe-2">
+            <div class="container">
+               <div class="row align-items-center justify-content-between">
+                  <div class="col-md-7 col-lg-6 order-2 order-md-1">
+                     <h2 class="main-heading text-md-left mt-5 mt-md-0">Why choose</h2>
+                     <img class="mb-2" width="80" src="assets/images/logo.png" alt="logo">
+                     <p>Our Academy is committed to selecting only the best online teachers to teach students. why? Because
+                        great teachers make all the difference. They are helpful in student success.
+                     </p>
+                     <div>
+                        <a class="btn btn-primary" href="javascript:void(0)">Start Now</a>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg-4 text-center text-lg-right order-1 order-md-2">
+                     <img class="ellipse d-none d-md-block" src="assets/images/Ellipse.png" alt="Ellipse">
+                     <img class="img-fluid" src="assets/images/subscribe2.png" alt="client">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- card-section  -->
+         <section class="card-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <im class="d-none d-md-block" src="assets/images/Ellipse.png" alt="">
+                  </div>
+                  <div class="col-5 d-none d-md-block">
+                     <div class="card pr-1 pb-3">
+                        <div class="card-body pr-1">
+                           <div class="card-img"><img src="assets/images/icons/cards-section/brain.png" alt="brain"></div>
+                           <p>The teacher was able to know the aspects that the student did not understand and focus on
+                              them more, as each student has different aspects of understanding.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="offset-2 col-5 d-none d-md-block">
+                     <div class="card pr-1 pb-3">
+                        <div class="card-body pr-1">
+                           <div class="card-img"><img src="assets/images/icons/cards-section/clock.png" alt="clock"></div>
+                           <p>Improve the quality of student understanding and reduce time as the teacher will only explain
+                              the aspects that the student did not understand.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-5 d-none d-md-block">
+                     <div class="card pr-1 pt-2">
+                        <div class="card-body pt-4">
+                           <div class="card-img"><img src="assets/images/icons/cards-section/info.png" alt="info"></div>
+                           <p>Since the student will be one person in front of the teacher, this enables the teacher to
+                              make sure that the student understands the lesson.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="offset-2 col-5 d-none d-md-block">
+                     <div class="card pr-1 pt-4">
+                        <div class="card-body pr-1">
+                           <div class="card-img"><img src="assets/images/icons/cards-section/feel.png" alt="feel"></div>
+                           <p>The student feels the personal attention of the teacher, as he is the only one in front of
+                              the teacher, and this improves the quality of education and gives him more freedom to ask
+                              questions.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 position-relative d-none d-md-block">
+                     <div class="card-bg">
+                        <img class="lineh" src="assets/images/Lineh.png" alt="">
+                        <img class="linev" src="assets/images/Linev.png" alt="">
+                     </div>
+                     <img class="lineb" src="assets/images/card-lineb.png" alt="lineb">
+                  </div>
+                  <div class="col-12 private-card">
+                     <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4">
+                           <div class="card private">
+                              <h2>Advantages of <br> private lessons</h2>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row d-md-none">
+                  <div class="col-md-12">
+                     <div id="owl-carousel" class="owl-carousel owl-theme">
+                        <div class="item">
+                           <div class="card">
+                              <div class="card-body">
+                                 <div class="card-img"><img src="assets/images/icons/cards-section/clock.png" alt="clock">
+                                 </div>
+                                 <p>Improve the quality of student understanding and reduce time as the teacher will only
+                                    explain
+                                    the aspects that the student did not understand.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="card">
+                              <div class="card-body">
+                                 <div class="card-img"><img src="assets/images/icons/cards-section/brain.png" alt="brain">
+                                 </div>
+                                 <p>The teacher was able to know the aspects that the student did not understand and focus
+                                    on
+                                    them more, as each student has different aspects of understanding.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="card">
+                              <div class="card-body">
+                                 <div class="card-img"><img src="assets/images/icons/cards-section/info.png" alt="info">
+                                 </div>
+                                 <p>Since the student will be one person in front of the teacher, this enables the teacher
+                                    to
+                                    make sure that the student understands the lesson.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="card">
+                              <div class="card-body">
+                                 <div class="card-img"><img src="assets/images/icons/cards-section/feel.png" alt="feel">
+                                 </div>
+                                 <p>The student feels the personal attention of the teacher, as he is the only one in front
+                                    of
+                                    the teacher, and this improves the quality of education and gives him more freedom to
+                                    ask
+                                    questions.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </section>
+         <!-- Features -->
+         <section class="features">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <h2 class="main-heading">Features <img src="assets/images/features.png" alt="img"></h2>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                     <div class="media align-items-center">
+                        <div class="media-img mr-3">
+                           <img src="assets/images/icons/features/reward.png" alt="reward">
+                        </div>
+                        <div class="media-body">
+                           The platform provides trained teachers on specific teaching courses for each teacher, thus
+                           ensuring the quality of performance and teaching by the teacher
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                     <div class="media align-items-center">
+                        <div class="media-img mr-3">
+                           <img src="assets/images/icons/features/vedio.png" alt="vedio-img">
+                        </div>
+                        <div class="media-body">
+                           Lessons are recorded audio and video so that the student can
+                           Review it again, and the guardian can follow his son
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                     <div class="media align-items-center">
+                        <div class="media-img mr-3">
+                           <img src="assets/images/icons/features/man.png" alt="man">
+                        </div>
+                        <div class="media-body">
+                           The platform provides male teachers to teach boys
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                     <div class="media align-items-center">
+                        <div class="media-img mr-3">
+                           <img src="assets/images/icons/features/24.png" alt="24/7">
+                        </div>
+                        <div class="media-body">
+                           The platform is provided to teachers around the clock, allowing the student to start the class
+                           at any time and immediately
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                     <div class="media align-items-center">
+                        <div class="media-img mr-3">
+                           <img src="assets/images/icons/features/lady.png" alt="lady">
+                        </div>
+                        <div class="media-body">
+                           The platform provides women teachers to teach girls
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                     <div class="media align-items-center">
+                        <div class="media-img mr-3">
+                           <img src="assets/images/icons/features/clock.png" alt="clock">
+                        </div>
+                        <div class="media-body">
+                           Class prices are calculated by the minute, which gives flexibility in time for the student to
+                           consume what he needs
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                     <div class="media align-items-center">
+                        <div class="media-img mr-3">
+                           <img src="assets/images/icons/features/money.png" alt="wallet">
+                        </div>
+                        <div class="media-body">
+                           Teachers' prices for the specified course are the same, so the student does not need to compare
+                           prices
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                     <div class="media align-items-center">
+                        <div class="media-img mr-3">
+                           <img src="assets/images/icons/features/info.png" alt="info">
+                        </div>
+                        <div class="media-body">
+                           The lesson is delivered from the teacher to the student using direct video viewing, as well as
+                           by sharing the screen to explain the materials, as well as using an interactive smart board that
+                           allows the teacher and student to write on one board
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Works  Section -->
+         <section class="works">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <h2 class="main-heading">How it works?</h2>
+                  </div>
+                  <!-- icons 1-->
+                  <div class="col-6 col-lg-3 icon">
+                     <div>
+                        <img src="assets/images/icons/works/book.png" alt="book">
+                     </div>
+                     <a href="JavaScript:void(0)" class="btn">Choose a subject</a>
+                  </div>
+                  <!-- icons 2-->
+                  <div class="col-6 col-lg-3 icon">
+                     <div>
+                        <img src="assets/images/icons/works/human.png" alt="human-img">
+                     </div>
+                     <a href="JavaScript:void(0)" class="btn">Selete a teacher</a>
+                  </div>
+                  <!-- icons 3-->
+                  <div class="col-6 col-lg-3 icon">
+                     <div>
+                        <img src="assets/images/icons/works/wallet.png" alt="wallet">
+                     </div>
+                     <a href="JavaScript:void(0)" class="btn">Top up your balance</a>
+                  </div>
+                  <!-- icons 4-->
+                  <div class="col-6 col-lg-3 icon">
+                     <div>
+                        <img src="assets/images/icons/works/pc.png" alt="pc">
+                     </div>
+                     <a href="javascript:void(0)" class="btn">start the lesson</a>
+                  </div>
+                  <div class="col-10 m-auto position-relative d-none d-lg-block px-5">
+                     <hr>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Join -->
+         <section class="join pt-2">
+            <div class="container">
+               <div class="row align-items-center text-center">
+                  <div class="col-12 col-md-7 text-md-right pr-lg-5">
+                     <h2 class="main-heading text-md-right">Join our teachers</h2>
+                     <p>Register with us for an opportunity to work as a remote teacher.</p>
+                     <div class="d-none d-md-block">
+                        <a href="javascript:void(0)" class="btn btn-primary">teacher registration</a>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-5">
+                     <img class="img-fluid d-flex m-auto" src="assets/images/teachers-pic.png" alt="">
+                     <a href="javascript:void(0)" class="btn btn-primary d-md-none mt-4">teacher registration</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- footer  -->
+      <footer>
+         <div class="container">
+            <div class="row justify-content-between">
+               <div class="col-12 col-md-4 col-xl-3 text-center text-md-left pr-xl-0">
+                  <h5 class="d-none d-md-block"></h5>
+                  <img class="tick" src="assets/images/features.png" alt="">
+                  <p>Najeeb platform is an educational platform specialized in providing private tutors to students for the
+                     stages of general education from the first primary to the third secondary, and for all academic
+                     subjects. It also provides teaching the Noble Qur’an and Tajweed for all ages.
+                  </p>
+               </div>
+               <div class="col-8 col-md-4 col-xl-3">
+                  <h5 class="rounded-pill d-none d-md-block">Important links</h5>
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png"> Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png"> Teachers</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png"> Contact Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png"> Join us as a teacher</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)"><img class="mr-2"
+                           src="assets/images/icons/footer/play.png"> Login</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-4 col-md-4 col-xl-3">
+                  <div class="d-none d-md-block">
+                     <h5 class="text-right">Contact Us</h5>
+                     <a class="nav-link" href="mailto:info@najeeb.sa"><img class="mr-2"
+                        src="assets/images/icons/footer/mail.png"> info@najeeb.sa</a>
+                  </div>
+                  <div class="follow">
+                     <p class="mb-2">Follow us</p>
+                     <ul class="d-flex">
+                        <li><a href="javascript:void(0)"><img src="assets/images/icons/footer/twitter.png"
+                           alt="twitter"></a></li>
+                        <li><a href="javascript:void(0)"><img src="assets/images/icons/footer/fb.png" alt="fb"></a></li>
+                        <li><a href="javascript:void(0)"><img src="assets/images/icons/footer/yt.png" alt="yt"></a></li>
+                        <li><a href="javascript:void(0)"><img src="assets/images/icons/footer/insta.png" alt="insta"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-10 pl-0">
+                  <div class="d-md-none text-right mt-4">
+                     <h5>Contact Us</h5>
+                     <a class="nav-link" href="mailto:info@najeeb.sa"><img class="mr-2"
+                        src="assets/images/icons/footer/mail.png">info@najeeb.sa</a>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <p class="text-center copy-right pt-4">© All Rights Reserved najeeb.sa</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+      <!-- JavaScript -->
+      <script src="assets/js/jquery-3.5.1.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/owl.carousel.js"></script>
+      <!-- Select Dropdown -->
+      <script src="assets/js/select2.min.js"></script>
+      <script>
+         $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+               $('.navbar').addClass('navbar-dark');
+            } else {
+               $('.navbar').removeClass('navbar-dark');
+            }
+         });
+         
+         $('#owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            dots: false,
+            nav: false,
+            items: 1.5,
+         })
+         
+         
+         $(document).ready(function() {
+          $('.js-example-basic-single').select2();
+         });
+         
+      </script>
+   </body>
+</html>
